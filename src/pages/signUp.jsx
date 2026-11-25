@@ -2,10 +2,10 @@ import React from "react";
 import AuthLayout from "../components/Layouts/AuthLayout";
 import FormSignUp from "../components/Fragments/FormSignUp";
 
-function SignUp({ onSignIn }) {
+function SignUp() {
   return (
     <AuthLayout>
-      <FormSignUp onSignIn={onSignIn} />
+      <FormSignUp />
     </AuthLayout>
   );
 }

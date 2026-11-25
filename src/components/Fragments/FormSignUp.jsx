@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import LabeledInput from "../Elements/LabeledInput";
 import Button from "../Elements/Button";
+import { Link } from "react-router-dom";
 
-function FormSignUp({ onSignIn }) {
+function FormSignUp() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
@@ -105,12 +106,9 @@ function FormSignUp({ onSignIn }) {
       {/* link ke sign in start */}
       <div className="flex justify-center text-sm text-gray-02">
         <span>Already have an account?&nbsp;</span>
-        <a
-          className="text-primary font-bold cursor-pointer"
-          onClick={onSignIn}
-        >
+        <Link to="/login" className="text-primary font-bold">
           Sign in here
-        </a>
+        </Link>
       </div>
       {/* link ke sign in end */}
     </>
